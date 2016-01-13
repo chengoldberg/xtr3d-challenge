@@ -1,5 +1,5 @@
 # Xtr3d Challenge
-We provide OpenCV tutorials on how to utilize ubiquitous Computer Vision algorithms along with a general pythonic infrastructure and a rudimentary python game to test it. **Your job is implement a simple Natural User Interface engine**.
+We provide OpenCV tutorials on how to utilize ubiquitous Computer Vision algorithms along with a general pythonic infrastructure and a rudimentary python game to test it. **Your job is to implement a simple Natural User Interface engine**.
 <p align="center">
   <img src="http://memesvault.com/wp-content/uploads/Challenge-Accepted-Face-01.jpg" width="320"/>
 </p>
@@ -24,7 +24,7 @@ You can assume the following:
 Python 2.7.x with the following packages:
 
 1. numpy
-2. opencv-python version 2.4.9 - 2.4.12
+2. opencv-python (version 2.4.9 - 2.4.12)
 3. pygame
 
 ### Notebooks
