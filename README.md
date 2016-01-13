@@ -1,5 +1,22 @@
 # Xtr3d Challenge
-## Requirements
+We provide OpenCV tutorials on how to utilize ubiquitous Computer Vision algorithms along with a general pythonic infrastructure and a rudimentary python game to test it. Your job is implement a simple Natural User Interface engine (NUI).
+
+## Goal
+The Engine you implement should allow a person to use its camera to control 3 parameters:
+
+1. The position of the head in the image
+2. The orientation of both arms extended to the sides
+
+### Assumptions
+You can assume the following:
+
+* The scene is well lit
+* The person's face is always showing
+* The camera is physically stable
+* The camera doesn't automatically alter exposure or gain
+* The persons wears a shirt with short sleeves
+
+## Technical Requirements
 
 ### Game
 Python 2.7.x with the following packages:
@@ -18,6 +35,3 @@ The following packages:
 ## Tutorials
 1. [OpenCV basics](https://github.com/chengoldberg-xtr3d/xtr3d-challenge/blob/master/notebooks/opencv_basics.ipynb)
 2. [Face Detection](https://github.com/chengoldberg-xtr3d/xtr3d-challenge/blob/master/notebooks/face_detection.ipynb)
-
-## Instructions
-Soon...
