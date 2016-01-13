@@ -1,7 +1,7 @@
 # Xtr3d Challenge
-We provide OpenCV tutorials on how to utilize ubiquitous Computer Vision algorithms along with a general pythonic infrastructure and a rudimentary python game to test it. **Your job is implement a simple Natural User Interface engine (NUI)**.
-<div>
-<img src="http://memesvault.com/wp-content/uploads/Challenge-Accepted-Face-01.jpg" width="320" align="middle" />
+We provide OpenCV tutorials on how to utilize ubiquitous Computer Vision algorithms along with a general pythonic infrastructure and a rudimentary python game to test it. **Your job is implement a simple Natural User Interface engine**.
+<div style="text-align: center;">
+<img src="http://memesvault.com/wp-content/uploads/Challenge-Accepted-Face-01.jpg" width="320"/>
 </div>
 ## Goal
 The Engine you implement should allow a person to use its camera to control 3 parameters:
