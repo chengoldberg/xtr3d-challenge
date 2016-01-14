@@ -5,7 +5,10 @@ import math
 import numpy as np
 import pygame
 from pygame.locals import *
-import algo
+try:
+    import algo_complete as algo
+except:
+    import algo
 
 # see if we can load more than standard BMP
 if not pygame.image.get_extended():

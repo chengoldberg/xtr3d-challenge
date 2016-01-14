@@ -9,6 +9,10 @@ The Engine you implement should allow a person to use its camera to control 3 pa
 1. The position of the head in the image
 2. The orientation of both arms extended to the sides
 
+<p align="center">
+  <img src="img-src/screencap.jpg" />
+</p>
+
 ### Assumptions
 You can assume the following:
 
