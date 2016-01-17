@@ -3,6 +3,9 @@ import argparse
 import cv2
 import math
 
+cv_version = map(int, cv2.__version__.split('.'))
+if cv_version[0] != 2 or cv_version[1] != 4 or cv_version[2] < 9:
+    raise ImportError('OpenCV version is %s, must be 2.4.x where 9<=x' % cv2.__version__)
 
 class FaceDetector(object):
     """
