@@ -10,10 +10,6 @@ try:
 except:
     import algo
 
-# see if we can load more than standard BMP
-if not pygame.image.get_extended():
-    raise SystemExit("Sorry, extended image module required")
-
 # game constants
 MAX_SHOTS = 2  # most player bullets onscreen
 ALIEN_ODDS = 22  # chances a new alien appears
@@ -30,6 +26,7 @@ def load_image(file):
     file = os.path.join(main_dir, 'data', file)
     try:
         surface = pygame.image.load(file)
+        surface.set_colorkey((128, 8, 113))
     except pygame.error:
         raise SystemExit('Could not load image "%s" %s' % (file, pygame.get_error()))
     return surface.convert()
@@ -49,6 +46,7 @@ class dummysound:
 def load_sound(file):
     if not pygame.mixer: return dummysound()
     file = os.path.join(main_dir, 'data', file)
+    return dummysound()
     try:
         sound = pygame.mixer.Sound(file)
         return sound
@@ -254,14 +252,14 @@ class Game(object):
     def load_assets(self):
         # Load images, assign to sprite classes
         # (do this before the classes are used, after screen setup)
-        img = load_image('player1.gif')
+        img = load_image('player1.bmp')
         Player.images = [img, pygame.transform.flip(img, 1, 0)]
-        img = load_image('explosion1.gif')
+        img = load_image('explosion1.bmp')
         Explosion.images = [img, pygame.transform.flip(img, 1, 1)]
-        Alien.images = load_images('alien1.gif', 'alien2.gif', 'alien3.gif')
-        Bomb.images = [load_image('bomb.gif')]
-        Shot.images = [load_image('shot.gif')]
-        img = load_image('gun.gif')
+        Alien.images = load_images('alien1.bmp', 'alien2.bmp', 'alien3.bmp')
+        Bomb.images = [load_image('bomb.bmp')]
+        Shot.images = [load_image('shot.bmp')]
+        img = load_image('gun.bmp')
         Gun.images = [pygame.transform.flip(img, 1, 0), img]
 
         # decorate the game window
@@ -271,7 +269,7 @@ class Game(object):
         pygame.mouse.set_visible(0)
 
         # create the background, tile the bgd image
-        bgdtile = load_image('background.gif')
+        bgdtile = load_image('background.bmp')
         self.background = pygame.Surface(SCREENRECT.size)
         for x in range(0, SCREENRECT.width, bgdtile.get_width()):
             self.background.blit(bgdtile, (x, 0))
