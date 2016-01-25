@@ -57,3 +57,7 @@ docs/_build/
 target/
 notebooks/.ipynb_checkpoints/background-checkpoint.ipynb
 notebooks/.ipynb_checkpoints/blob_analysis-checkpoint.ipynb
+notebooks/.ipynb_checkpoints/face_detection-checkpoint.ipynb
+notebooks/.ipynb_checkpoints/skin_detection-checkpoint.ipynb
+notebooks/.ipynb_checkpoints/opencv_basics-checkpoint.ipynb
+notebooks/.ipynb_checkpoints/mean_shift-checkpoint.ipynb
