@@ -1,7 +1,8 @@
 import numpy as np
 import argparse
 import cv2
-import math
+import math, os
+import utils
 
 cv_version = map(int, cv2.__version__.split('.'))
 if cv_version[0] != 2 or cv_version[1] != 4 or cv_version[2] < 9:
@@ -66,7 +67,10 @@ class NUIEngine(object):
         self.frame_num = -1
         self.video_writer = None
         if self.playback_video:
-            self.video_capture = cv2.VideoCapture(self.playback_video)
+            if os.path.isdir(self.playback_video):
+                self.video_capture = utils.ImageSequenceReader(self.playback_video, 5)
+            else:
+                self.video_capture = cv2.VideoCapture(self.playback_video)
         else:
             self.video_capture = cv2.VideoCapture(0)
             if self.record_video:
