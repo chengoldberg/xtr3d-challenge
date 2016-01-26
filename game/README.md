@@ -5,6 +5,15 @@ This folder contains 3 scripts:
 2. [game.py](game.py) - very simple shooter arcade style game to be controlled by the NUI engine. You don't need to touch it. The **data** folder contains resources used by the game script.
 3. [utils.py](utils.py) - some useful utility functions.
 
+## Commandline Interface
+Use these on either algo.py or game.py:
+* **-playback-video** Full path to the video file/image sequence dir to playback
+* **-record-video** Full path to the video file to record
+
+For example to run with the included image sequence:
+
+`game.py -playback-video ..\inputs\image_sequence_1`
+
 ## Exercise
 The code in algo.py is partial. It only deals with reading input and setting face position and arm orientation for the game to use. Your exercise is to implement the actual algorithm. We seperate the task into 5 stages - each stage has an equivalent tutorial. Read the tutorial and implement the stage. **Good luck!**.
 
