@@ -42,9 +42,12 @@ The following packages:
 1. [OpenCV Basics](notebooks/opencv_basics.ipynb)
 2. [Face Detection](notebooks/face_detection.ipynb)
 3. [Mean-Shift Tracking](notebooks/mean_shift.ipynb)
-4. Skin Detection
-5. Blob Analysis
+4. [Skin Detection](notebooks/skin_detection.ipynb)
+5. [Blob Analysis](notebooks/blob_analysis.ipynb)
 6. [Background Subtraction](notebooks/background.ipynb)
+
+## Exercise
+Read the exercise details [here](game/README.md#exercise)
 
 ## About
 
