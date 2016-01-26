@@ -6,6 +6,8 @@ This folder contains two scripts:
 3. [utils.py](utils.py) - some useful utility functions.
 
 ## Exercise
+The code in algo.py is partial. It only deals with reading input and setting face position and arm orientation for the game to use. Your exercise is to implement the actual algorithm. We seperate the task into 5 stages - each stage has an equivalent tutorial. Read the tutorial and implement the stage. **Good luck!**.
+
 ### 1. Find the face
 * Use OpenCV to find a face in each frame - put it's resolution normalized coordinates (e.g. 320,192 in 640x480 is (0.5, 0.4)) into *NUIEngine.face_position*. 
 * You will soon see that the face detector in some frames will miss the face (false-negative) and sometimes detect faces where the face is doesn't exist (false-positive). Try to find a way to deal with both problems by taking advantage of the fact that the actual face doesn't move much from one frame to the next (smoothness and locality).
@@ -26,5 +28,5 @@ This folder contains two scripts:
 * Use the MOG background subtraction algorithm to seperate foreground pixels from background pixels.
 * Intersect the background map with the skin map to improve recall (reduce false-positives).
 
- 
-
+## Goal
+Your final implementation should work well and allow the player to enjoy playing the game and obtain a high score - that's the only test.
