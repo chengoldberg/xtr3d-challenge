@@ -31,7 +31,7 @@ The code in algo.py is partial. It only deals with reading input and setting fac
  
 ### 4. Detect the arm blobs
 * Use morphologies on the binary skin map to eliminate small non-skin blobs and merge larger skin blobs.
-* Detect the two largest blobs on either side of the face and estimate its orientation.
+* Detect the two largest blobs on either side of the face and estimate its orientation. Place the detected orientation in: *NUIEngine.left_degrees* and *NUIEngine.right_degrees* (as degrees).
 
 ### 5. Background Subtraction
 * Use the MOG background subtraction algorithm to seperate foreground pixels from background pixels.
